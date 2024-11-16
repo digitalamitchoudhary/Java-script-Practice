@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate the Area of a Triangle</title>
+</head>
+<body>
+    <script>
+        // Prompt user for input
+        let a = parseInt(prompt("Enter the a of the triangle:"));
+        let b = parseInt(prompt("Enter the b of the triangle:"));
+        let c = parseInt(prompt("Enter the c of the triangle:"));
+ 
+        let s   = (a+b+c) / 2;
+        let temp = s*(s-a)*(s-b)*(s-c);
+        let area = Math.sqrt(temp)
+
+        // Output the result
+        console.log(area);
+        document.write(`The area of the triangle  is ${area}.`);
+    </script>
+</body>
+</html>
